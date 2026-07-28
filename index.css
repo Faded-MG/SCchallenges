@@ -1,33 +1,68 @@
 body {
-    background-color: white
-
+    background-color: white;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
 }
+
 h1 {
     color: #333;
-    font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
-}
-.profiles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
 }
 
-.profiles img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}*/
+
+.search-container {
+    width: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#search {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#results {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 220px;
+    overflow-y: auto;
+    display: none;
+    z-index: 100;
+}
+
+.result {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.result:hover {
+    background: #f2f2f2;
+}
+
+
+
 .profiles {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .profileCard {
+    width: 260px;
+    padding: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .profileCard img {
@@ -41,12 +76,9 @@ h1 {
     margin-top: 10px;
     font-size: 16px;
 }
+
 .bullet {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-.search {
-
-
+    margin-top: 10px;
 }
